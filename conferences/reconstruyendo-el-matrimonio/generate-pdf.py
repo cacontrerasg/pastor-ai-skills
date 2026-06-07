@@ -36,6 +36,10 @@ def conf_styles():
         "Reference", fontName="Helvetica-Bold", fontSize=9, leading=13,
         textColor=NAVY, spaceAfter=0,
     )
+    s["context"] = ParagraphStyle(
+        "Context", fontName="Times-Italic", fontSize=9.5, leading=13,
+        textColor=SLATE, spaceBefore=4, spaceAfter=0,
+    )
     s["sub"] = ParagraphStyle(
         "Sub", fontName="Helvetica-Bold", fontSize=12, leading=16,
         textColor=NAVY, spaceBefore=14, spaceAfter=6,
@@ -60,13 +64,18 @@ def conf_styles():
 
 
 def scripture_box(story, verses, styles):
-    """verses: list of (text, reference)."""
+    """verses: list of (text, reference) or (text, reference, context)."""
     elements = []
-    for i, (text, ref) in enumerate(verses):
+    for i, verse in enumerate(verses):
+        text, ref = verse[0], verse[1]
+        context = verse[2] if len(verse) > 2 else None
         elements.append(Paragraph(f"“{text}”", styles["scripture"]))
         elements.append(Paragraph(ref, styles["reference"]))
+        if context:
+            elements.append(Paragraph(
+                f"<b>Contexto:</b> {context}", styles["context"]))
         if i < len(verses) - 1:
-            elements.append(Spacer(1, 8))
+            elements.append(Spacer(1, 10))
     add_shaded_box(story, elements, styles)
     story.append(Spacer(1, 12))
 
@@ -113,9 +122,15 @@ def main(output_path=None):
     section_header(story, "Texto Base", s)
     scripture_box(story, [
         ("Por tanto, dejará el hombre a su padre y a su madre, y se unirá "
-         "a su mujer, y serán una sola carne.", "Génesis 2:24 (RV1960)"),
+         "a su mujer, y serán una sola carne.", "Génesis 2:24 (RV1960)",
+         "Cierra el relato de la creación, justo tras formar Dios a la mujer "
+         "y presentarla a Adán. Es la declaración fundacional del matrimonio, "
+         "dada antes de la caída: el diseño original y perfecto de Dios."),
         ("Así que no son ya más dos, sino una sola carne; por tanto, lo "
-         "que Dios juntó, no lo separe el hombre.", "Mateo 19:6 (RV1960)"),
+         "que Dios juntó, no lo separe el hombre.", "Mateo 19:6 (RV1960)",
+         "Los fariseos prueban a Jesús sobre el divorcio 'por cualquier causa'. "
+         "En vez de buscar excusas para separarse, Él vuelve a Génesis y afirma "
+         "el matrimonio como obra permanente de Dios, no contrato humano."),
     ], s)
 
     # --- Idea central ---
@@ -173,8 +188,14 @@ def main(output_path=None):
     para(story, "1. La falta de comunicación", s, "sub")
     scripture_box(story, [
         ("Todo hombre sea pronto para oír, tardo para hablar, tardo para airarse.",
-         "Santiago 1:19"),
-        ("La muerte y la vida están en poder de la lengua.", "Proverbios 18:21"),
+         "Santiago 1:19",
+         "Carta muy práctica de Santiago, hermano de Jesús, a creyentes "
+         "dispersos. El orden que da —oír primero, hablar después, airarse de "
+         "último— es el opuesto al que seguimos al discutir en pareja."),
+        ("La muerte y la vida están en poder de la lengua.", "Proverbios 18:21",
+         "Sabiduría práctica de Salomón. Este capítulo insiste en el poder de "
+         "las palabras: la lengua no es neutral, construye o destruye, y "
+         "cosechamos lo que decimos."),
     ], s)
     add_bullet_list(story, [
         "Muchos matrimonios hablan diariamente, pero no se comunican.",
@@ -185,22 +206,36 @@ def main(output_path=None):
 
     para(story, "2. El orgullo", s, "sub")
     scripture_box(story, [
-        ("Ciertamente la soberbia concebirá contienda.", "Proverbios 13:10"),
-        ("Nada hagáis por contienda o por vanagloria…", "Filipenses 2:3-4"),
+        ("Ciertamente la soberbia concebirá contienda.", "Proverbios 13:10",
+         "La frase completa contrasta la soberbia, que siempre produce pleitos, "
+         "con los que reciben consejo, que tienen sabiduría. El orgullo es la "
+         "raíz, no el síntoma, del conflicto."),
+        ("Nada hagáis por contienda o por vanagloria…", "Filipenses 2:3-4",
+         "Pablo escribe desde la cárcel a una iglesia que ama, llamándola a la "
+         "humildad; acto seguido (2:5-11) pone como modelo a Cristo, que se "
+         "humilló hasta la cruz. La humildad es seguir el ejemplo de Jesús."),
     ], s)
     para(story, "El orgullo convierte conversaciones en batallas. No siempre gana quien "
                 "tiene la razón; gana quien preserva la relación.", s)
 
     para(story, "3. El distanciamiento espiritual", s, "sub")
     scripture_box(story, [
-        ("Cordón de tres dobleces no se rompe pronto.", "Eclesiastés 4:12"),
+        ("Cordón de tres dobleces no se rompe pronto.", "Eclesiastés 4:12",
+         "Salomón reflexiona sobre la ventaja de la compañía frente a la "
+         "soledad (4:9-12). El tercer cordón se ha entendido como Dios "
+         "entretejido en la relación: la pareja se fortalece cuando Él es el "
+         "tercer hilo."),
     ], s)
     para(story, "Cuando Cristo deja de ser el centro, el matrimonio comienza a depender "
                 "únicamente de las fuerzas humanas.", s)
 
     para(story, "4. La pérdida del amor práctico", s, "sub")
     scripture_box(story, [
-        ("Has dejado tu primer amor.", "Apocalipsis 2:4-5"),
+        ("Has dejado tu primer amor.", "Apocalipsis 2:4-5",
+         "Carta del Cristo resucitado a la iglesia de Éfeso: trabajadora y "
+         "firme en doctrina, pero había perdido el amor de los primeros "
+         "tiempos. Su remedio (v. 5): recuerda, arrepiéntete y vuelve a hacer "
+         "las primeras obras."),
     ], s)
     para(story, "No se pierde el amor de un día para otro. Se pierde cuando dejamos "
                 "de hacer las cosas que alimentaban la relación.", s)
@@ -219,9 +254,19 @@ def main(output_path=None):
     para(story, "Pilar 1: Amor", s, "sub")
     scripture_box(story, [
         ("Maridos, amad a vuestras mujeres, así como Cristo amó a la iglesia.",
-         "Efesios 5:25"),
+         "Efesios 5:25",
+         "Pablo enseña sobre el hogar cristiano. Al esposo no le manda dominar, "
+         "sino amar con el amor más alto: el de Cristo, que 'se entregó a sí "
+         "mismo'. Un amor sacrificial que da y sirve, no que exige."),
     ], s)
-    para(story, "Características del amor bíblico (1 Corintios 13:4-8):", s, "body_bold")
+    scripture_box(story, [
+        ("El amor es sufrido, es benigno… no busca lo suyo… todo lo soporta… "
+         "nunca deja de ser.", "1 Corintios 13:4-8",
+         "El 'himno al amor' no se escribió para una boda, sino corrigiendo a "
+         "una iglesia dividida que presumía de sus dones. Pablo describe el "
+         "amor con verbos —conducta diaria—, no como un sentimiento."),
+    ], s)
+    para(story, "Características del amor bíblico:", s, "body_bold")
     add_bullet_list(story, [
         "Paciente", "Bondadoso", "No egoísta", "No orgulloso", "Perseverante",
     ], s)
@@ -229,21 +274,33 @@ def main(output_path=None):
 
     para(story, "Pilar 2: Respeto", s, "sub")
     scripture_box(story, [
-        ("…y la mujer respete a su marido.", "Efesios 5:33"),
+        ("…y la mujer respete a su marido.", "Efesios 5:33",
+         "Resumen con que Pablo cierra su enseñanza matrimonial: el esposo ama "
+         "como a sí mismo, la esposa respeta. Une las dos necesidades "
+         "complementarias del hogar —ser amada y ser respetado— en una frase."),
     ], s)
     para(story, "El amor inspira respeto; el respeto fortalece el amor.", s)
 
     para(story, "Pilar 3: Confianza", s, "sub")
     scripture_box(story, [
-        ("El corazón de su marido está en ella confiado.", "Proverbios 31:11"),
+        ("El corazón de su marido está en ella confiado.", "Proverbios 31:11",
+         "Del poema de la mujer virtuosa (Pr 31:10-31), enseñanza que el rey "
+         "Lemuel aprendió de su madre. La confianza descrita no se exige: es "
+         "fruto de una vida íntegra y digna de fiar."),
     ], s)
     para(story, "La confianza se construye con:", s, "body_bold")
     add_bullet_list(story, ["Transparencia", "Integridad", "Coherencia"], s)
 
     para(story, "Pilar 4: Unidad Espiritual", s, "sub")
     scripture_box(story, [
-        ("¿Andarán dos juntos, si no estuvieren de acuerdo?", "Amós 3:3"),
-        ("Yo y mi casa serviremos a Jehová.", "Josué 24:15"),
+        ("¿Andarán dos juntos, si no estuvieren de acuerdo?", "Amós 3:3",
+         "El profeta usa preguntas retóricas para mostrar que todo efecto tiene "
+         "una causa: dos no caminan juntos por casualidad, sino porque acordaron "
+         "el mismo destino. La unidad nace de un acuerdo y una dirección común."),
+        ("Yo y mi casa serviremos a Jehová.", "Josué 24:15",
+         "Al final de su vida, Josué confronta a Israel en Siquem a elegir a "
+         "quién servir, y antes declara públicamente la decisión de su propia "
+         "casa. Un líder que fija la dirección espiritual de su hogar."),
     ], s)
     para(story, "La verdadera unidad matrimonial comienza en la presencia de Dios.", s)
 
@@ -264,27 +321,44 @@ def main(output_path=None):
 
     para(story, "1. El perdón", s, "sub")
     scripture_box(story, [
-        ("Perdonándoos unos a otros.", "Colosenses 3:13 (ver Mateo 18:21-22)"),
+        ("Perdonándoos unos a otros… de la manera que Cristo os perdonó.",
+         "Colosenses 3:13",
+         "Pablo describe la 'nueva ropa' del creyente —compasión, bondad, "
+         "humildad— y le pone medida al perdón: como Cristo nos perdonó. El "
+         "estándar no es lo que el otro merece, sino lo que ya recibimos."),
+        ("¿Hasta siete veces? … hasta setenta veces siete.", "Mateo 18:21-22",
+         "Pedro cree ser generoso con siete veces; Jesús responde 'setenta "
+         "veces siete': sin llevar la cuenta. Luego la parábola del siervo "
+         "perdonado que no perdona: el perdonado está obligado a perdonar."),
     ], s)
     para(story, "Perdonar no es justificar. Perdonar es liberar el corazón del peso "
                 "de la ofensa.", s)
 
     para(story, "2. La restauración", s, "sub")
     scripture_box(story, [
-        ("Y os restituiré los años que comió la oruga.", "Joel 2:25"),
+        ("Y os restituiré los años que comió la oruga.", "Joel 2:25",
+         "Joel habla a un pueblo devastado por una plaga de langostas, imagen "
+         "del juicio. Tras el llamado al arrepentimiento, Dios promete no solo "
+         "perdonar, sino restituir los años perdidos."),
     ], s)
     para(story, "Dios puede restaurar: la confianza, la comunicación, el amor y los sueños.", s)
 
     para(story, "3. La humildad", s, "sub")
     scripture_box(story, [
-        ("Revestíos de humildad.", "1 Pedro 5:5"),
+        ("Revestíos de humildad.", "1 Pedro 5:5",
+         "Pedro escribe a creyentes que sufren y cierra citando Proverbios: "
+         "'Dios resiste a los soberbios, y da gracia a los humildes'. La "
+         "humildad atrae la gracia de Dios; el orgullo, su resistencia."),
     ], s)
     para(story, "Los matrimonios fuertes no son los que nunca fallan, sino los que saben "
                 "arrepentirse.", s)
 
     para(story, "4. El servicio mutuo", s, "sub")
     scripture_box(story, [
-        ("…servíos por amor los unos a los otros.", "Gálatas 5:13"),
+        ("…servíos por amor los unos a los otros.", "Gálatas 5:13",
+         "Pablo defiende la libertad en Cristo, pero aclara que no es licencia "
+         "para el egoísmo. La verdadera libertad se demuestra sirviendo por "
+         "amor. En el matrimonio: ser libres se traduce en servir, no exigir."),
     ], s)
     para(story, "El matrimonio florece cuando ambos dejan de preguntar “¿qué "
                 "puedo recibir?” y comienzan a preguntar “¿cómo puedo servir?”.", s)
@@ -301,26 +375,41 @@ def main(output_path=None):
 
     para(story, "El matrimonio es un pacto", s, "sub")
     scripture_box(story, [
-        ("…ella es tu compañera y la mujer de tu pacto.", "Malaquías 2:14"),
+        ("…ella es tu compañera y la mujer de tu pacto.", "Malaquías 2:14",
+         "El último profeta del AT reprende a los hombres de Judá que eran "
+         "infieles y se divorciaban de la esposa de su juventud. Dios es "
+         "testigo del voto: el matrimonio es un pacto solemne, no descartable."),
     ], s)
     para(story, "Un contrato dura mientras beneficia. Un pacto permanece aun en las dificultades.", s)
 
     para(story, "Fidelidad al compromiso", s, "sub")
     scripture_box(story, [
-        ("Mejor es que no prometas, y no que prometas y no cumplas.", "Eclesiastés 5:4-5"),
+        ("Mejor es que no prometas, y no que prometas y no cumplas.",
+         "Eclesiastés 5:4-5",
+         "Salomón habla de la seriedad de los votos hechos a Dios: cumplirlos "
+         "sin demora. Dios toma en serio nuestras promesas, y el voto "
+         "matrimonial, hecho ante Él, entra en esta advertencia."),
     ], s)
     para(story, "El matrimonio es una promesa hecha delante de Dios.", s)
 
     para(story, "El amor que permanece", s, "sub")
     scripture_box(story, [
-        ("Fuerte es como la muerte el amor…", "Cantares 8:6-7"),
+        ("Fuerte es como la muerte el amor… Las muchas aguas no podrán apagar "
+         "el amor.", "Cantares 8:6-7",
+         "Clímax del poema de amor conyugal de Salomón: el amor como un sello "
+         "sobre el corazón, fuerte como la muerte, una llama que ni las aguas "
+         "apagan y que no se puede comprar. Amor firme, exclusivo y permanente."),
     ], s)
     para(story, "El amor verdadero no se sostiene por circunstancias favorables, sino por "
                 "compromiso y gracia.", s)
 
     para(story, "Cristo en el centro", s, "sub")
     scripture_box(story, [
-        ("El matrimonio refleja la relación entre Cristo y su Iglesia.", "Efesios 5:31-32"),
+        ("Serán los dos una sola carne. Grande es este misterio… respecto de "
+         "Cristo y de la iglesia.", "Efesios 5:31-32",
+         "Pablo cita Génesis 2:24 y revela su sentido profundo: el matrimonio "
+         "es un 'misterio' que apunta a algo mayor. Cada unión es figura visible "
+         "de Cristo y su Iglesia; predica el Evangelio sin palabras."),
     ], s)
     para(story, "Cada hogar cristiano está llamado a mostrar el Evangelio a través "
                 "de su relación matrimonial.", s)
@@ -328,7 +417,11 @@ def main(output_path=None):
     # --- Conclusión ---
     section_header(story, "Conclusión", s)
     scripture_box(story, [
-        ("Mejores son dos que uno…", "Eclesiastés 4:9-12"),
+        ("Mejores son dos que uno… y cordón de tres dobleces no se rompe pronto.",
+         "Eclesiastés 4:9-12",
+         "Cerramos donde la Parte I señaló el problema. Salomón celebra la "
+         "fuerza de la unión: dos se levantan si caen, se dan calor y resisten "
+         "al ataque. La pareja unida a Dios es la que no se rompe."),
     ], s)
     para(story, "El matrimonio no fue diseñado para sobrevivir; fue diseñado para "
                 "prosperar. No fue diseñado para soportarse; fue diseñado para "
@@ -355,11 +448,24 @@ def main(output_path=None):
 
     # --- Versículos clave ---
     section_header(story, "Versículos Clave de la Conferencia", s)
-    add_bullet_list(story, [
-        "Génesis 2:24", "Mateo 19:6", "Efesios 5:25", "Efesios 5:33",
-        "Malaquías 2:14", "Eclesiastés 4:12", "Colosenses 3:13",
-        "Joel 2:25", "Cantares 8:6-7", "Efesios 5:31-32",
-    ], s)
+    add_table(
+        story,
+        ["#", "Cita", "Contexto en una frase"],
+        [
+            ["1", "Génesis 2:24", "El diseño original del matrimonio, dado antes de la caída."],
+            ["2", "Mateo 19:6", "Jesús defiende la permanencia frente al divorcio fácil."],
+            ["3", "Efesios 5:25", "El esposo ama con el amor sacrificial de Cristo."],
+            ["4", "Efesios 5:33", "El equilibrio: amor del esposo, respeto de la esposa."],
+            ["5", "Malaquías 2:14", "Dios es testigo del pacto; reprende la infidelidad."],
+            ["6", "Eclesiastés 4:12", "La fuerza de la unión con Dios como tercer cordón."],
+            ["7", "Colosenses 3:13", "Perdonar con la medida en que Cristo nos perdonó."],
+            ["8", "Joel 2:25", "Dios restituye los años que el daño se llevó."],
+            ["9", "Cantares 8:6-7", "El amor conyugal: fuerte, exclusivo, inextinguible."],
+            ["10", "Efesios 5:31-32", "El matrimonio como figura de Cristo y la Iglesia."],
+        ],
+        [0.4, 1.4, 4.2],
+        s,
+    )
 
     page_footer = make_page_footer("church")
     doc.build(story, onFirstPage=page_footer, onLaterPages=page_footer)
