@@ -8,16 +8,16 @@
 
 ---
 
-## 1. El espejo honesto *(Parte I)*
+## 1. El espejo del corazón *(Parte I)*
 
-De estos cuatro daños, marca el que más afecta tu matrimonio hoy:
+¿Cuál de estos daños revela que mi corazón se está endureciendo? Marca uno:
 
 - [ ] Falta de comunicación
 - [ ] Orgullo
 - [ ] Distanciamiento espiritual
-- [ ] Pérdida del amor práctico
+- [ ] Pérdida del amor ("¿dónde se fue ese amor?")
 
-Un ejemplo concreto, sin acusar:
+¿En qué cosa pequeña siento que se fue parte de aquel primer amor?
 
 ________________________________________________________________
 
@@ -65,4 +65,4 @@ Firmas:  ____________________________   &   ____________________________
 
 ---
 
-> *"Cordón de tres dobleces no se rompe pronto."* — Eclesiastés 4:12
+> *"Sobre toda cosa guardada, guarda tu corazón; porque de él mana la vida."* — Proverbios 4:23

@@ -1,6 +1,11 @@
 # Reconstruyendo el Matrimonio que Dios Diseñó
 
-Conferencia cristiana para matrimonios, estructurada para **2 horas**.
+> *Dios reconstruye el hogar reconstruyendo el corazón.*
+
+Conferencia cristiana para matrimonios, estructurada para **2 horas**. El hilo
+conductor es **el corazón**: la dureza de corazón como raíz del daño (Mt 19:8),
+la advertencia de Salomón (1 R 11; Pr 4:23) y el corazón nuevo que Dios da
+(Ez 36:26).
 
 ## Archivos
 
@@ -22,10 +27,10 @@ El PDF queda fuera de control de versiones (`.gitignore`); se regenera cuando se
 ## Estructura de la conferencia
 
 1. **Bienvenida y apertura** (10 min)
-2. **Introducción** (10 min)
-3. **Parte I** — Lo que está dañando los matrimonios hoy (25 min)
-4. **Parte II** — Los cuatro pilares de un matrimonio saludable (25 min)
+2. **Introducción** (8 min)
+3. **Parte I** — Lo que endurece el corazón / lo que daña el matrimonio (28 min)
+4. **Parte II** — Los cuatro pilares de un matrimonio saludable (22 min)
 5. **Receso** (10 min)
 6. **Parte III** — Herramientas para restaurar la relación (20 min)
-7. **Parte IV** — Renovando el pacto matrimonial (15 min)
-8. **Conclusión y ministración final** (15 min)
+7. **Parte IV** — Renovando el pacto matrimonial (12 min)
+8. **Conclusión y ministración final** (10 min)
