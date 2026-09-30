@@ -18,8 +18,10 @@ material para el participante y esquema de diapositivas.
 | `04-hoja-del-participante.md` | Material imprimible de una hoja (frente y vuelta) | Asistentes |
 | `05-esquema-diapositivas.md` | Guion de 47 diapositivas (reducibles a 34), listo para montar | Quien monte el deck |
 | `06-plan-de-emergencia-de-la-iglesia.md` | Plantilla de plan y brigada para el local de reunión | Liderazgo / comité |
+| `Guion - Organismos de Socorro y la Biblia.docx` | El guion en Word, listo para imprimir (20 páginas) | Conferencista |
 | `Organismos de Socorro y la Biblia.pptx` | El deck montado y listo para proyectar (47 diapositivas) | Conferencista |
 | `generar-deck.js` | Script que genera el .pptx, por si hay que reeditarlo | Quien ajuste el deck |
+| `generar-guion-docx.js` | Script que convierte el guion .md en el .docx | Quien ajuste el documento |
 
 ---
 
@@ -66,6 +68,34 @@ El guion sigue el orden temático que definió el conferencista:
 quiere entrar por lo bíblico, intercambie los bloques 1 y 4. La conferencia
 abriría con la teología de la creación y cerraría con las medidas prácticas como
 aplicación. El guion está escrito para que ambos órdenes funcionen.
+
+---
+
+## El guion en Word
+
+`Guion - Organismos de Socorro y la Biblia.docx` es el mismo contenido de
+`01-guion-conferencia.md`, maquetado para imprimir y anillar: 20 páginas tamaño
+carta, con portada, encabezado y numeración.
+
+Lo que hace útil al documento en tarima es que **el texto hablado se distingue
+de un vistazo**: va con una barra ámbar al margen izquierdo y en tipografía
+serif, mientras las indicaciones y el material de apoyo van en sans. No hay que
+leer para saber qué toca decir.
+
+Cada bloque empieza en página nueva. El `Mapa de tiempos` de la página 2 hace de
+índice: lista los siete bloques con sus minutos y el acumulado.
+
+**Para regenerarlo** después de editar el `.md`:
+
+```bash
+npm install docx
+node generar-guion-docx.js 01-guion-conferencia.md "Guion - Organismos de Socorro y la Biblia.docx"
+```
+
+El script convierte el Markdown directamente, así que el `.md` sigue siendo la
+fuente: se edita ahí y se regenera. Si prefiere trabajar en Word, también puede
+editar el `.docx` a mano — solo tenga presente que entonces los dos archivos se
+separan.
 
 ---
 
