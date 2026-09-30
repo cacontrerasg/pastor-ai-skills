@@ -80,6 +80,23 @@ El código de color sigue el del esquema: ámbar para el hilo bíblico, y un col
 por amenaza en el Bloque 1 (naranja terremoto, azul ciclón, verde maremoto, rojo
 incendio, gris accidentes).
 
+### Las notas del orador
+
+**Cada una de las 47 diapositivas lleva en las notas lo que hay que decir ahí**,
+redactado en primera persona y listo para leerse. Están organizadas con
+etiquetas:
+
+- **USTED DICE** — el texto hablado, entre comillas angulares.
+- **USTED HACE** — la indicación escénica: cuándo callar, cuándo señalar la
+  pantalla, cuándo hacer la dinámica.
+- **SI SE LO PREGUNTAN** — la respuesta a la pregunta que suele salir.
+- **TRANSICIÓN** — el puente hacia el bloque siguiente.
+
+En PowerPoint se ven en la Vista del moderador, o en `Vista → Notas` para
+imprimirlas. Son unas 6.100 palabras en total, alrededor de 130 por diapositiva.
+El guion completo sigue estando en `01-guion-conferencia.md`, que es el
+documento para estudiar; las notas son para tenerlas delante mientras dicta.
+
 **Para reeditarlo:** el deck se genera desde `generar-deck.js`. Con Node
 instalado:
 

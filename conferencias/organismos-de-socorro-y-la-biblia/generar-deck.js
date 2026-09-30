@@ -201,7 +201,7 @@ function notes(s, t) { s.addNotes(t); }
     x: M, y: 6.25, w: 8.6, h: 0.4,
     fontFace: SANS, fontSize: 16, bold: true, color: MUTED, charSpacing: 1.4, isTextBox: true, margin: 0
   });
-  notes(s, 'No salude todavia. Entre en frio con la pregunta de la diapositiva 2.');
+  notes(s, 'ANTES DE EMPEZAR\n\nNo salude. No agradezca. No presente el tema todavía. Entre en frío con la pregunta de la diapositiva siguiente: la atención se gana en los primeros diez segundos, y un saludo largo la gasta.\n\nSi tiene que presentarse, hágalo después de la dinámica de la salida, en una sola frase: «Mi nombre es Carlos Contreras, y vengo a hablarles de dos mundos que casi nunca se juntan: los organismos de socorro y la Biblia.»');
 }
 
 /* 2 — Pregunta de entrada */
@@ -213,7 +213,7 @@ function notes(s, t) { s.addNotes(t); }
     x: 1.0, y: 5.25, w: W - 2.0, h: 0.5,
     fontFace: SERIF, fontSize: 20, italic: true, color: AMBER, align: 'center', isTextBox: true, margin: 0
   });
-  notes(s, 'Deje el silencio. No lo llene. La incomodidad es el punto.');
+  notes(s, 'USTED DICE\n\n«Voy a empezar con una pregunta incómoda, y quiero que la contesten en silencio, para ustedes mismos.\n\nSi en este momento, ahora mismo, esta sala se comenzara a mover… ¿usted sabe qué haría en los próximos diez segundos?\n\nNo lo que siente. Lo que haría.»\n\nUSTED HACE\n\nDeje el silencio. No lo llene. La incomodidad es el punto de esta diapositiva: casi nadie tiene respuesta, y esa es la conferencia entera.');
 }
 
 /* 3 — Dinamica: senale la salida */
@@ -225,7 +225,7 @@ function notes(s, t) { s.addNotes(t); }
     x: 1.0, y: 5.1, w: W - 2.0, h: 0.5,
     fontFace: SANS, fontSize: 19, bold: true, color: INK, align: 'center', isTextBox: true, margin: 0
   });
-  notes(s, 'Hagalo de verdad. Espere. Habra manos apuntando a lugares distintos y manos que no se levantan.');
+  notes(s, 'USTED DICE\n\n«Vamos a ver. Sin moverse de su asiento: señale con la mano la salida más cercana a usted.»\n\nUSTED HACE\n\nHágalo de verdad y espere. Va a haber manos apuntando a lugares distintos, y manos que no se levantan. No corrija a nadie: deje que lo vean.\n\nUSTED DICE\n\n«Miren a su alrededor. No todos apuntamos al mismo lugar. Y algunos no apuntaron. Eso no es un problema de fe. Es un problema de preparación. Y la Biblia tiene mucho, muchísimo que decir sobre eso.»');
 }
 
 /* 4 — Ezequiel 33:6 */
@@ -236,7 +236,7 @@ function notes(s, t) { s.addNotes(t); }
     { text: ', y el pueblo no se apercibiere, y viniendo la espada, hiriere de él a alguno… demandaré su sangre de mano del atalaya.', options: { color: CREAM } }
   ], 'Ezequiel 33:6', { eyebrow: 'Texto ancla de la conferencia', size: 28, th: 3.0 });
   kicker(s, 'El atalaya no detiene la espada. Ve a tiempo y avisa a tiempo.', AMBER, 5.95, 22);
-  notes(s, 'Dios invento el sistema de alerta temprana y lo puso en manos de su pueblo.');
+  notes(s, 'USTED DICE\n\n«El tema de hoy es Organismos de Socorro y la Biblia. Y quiero desarmar, desde el primer minuto, la idea de que estos son dos mundos separados: que la Defensa Civil, la Cruz Roja y los bomberos van por un lado, y la Biblia va por otro. No es así.»\n\nLea el versículo completo, despacio. Luego:\n\n«El atalaya no detiene la espada. No controla al enemigo. El atalaya tiene una sola responsabilidad: ver a tiempo y avisar a tiempo.\n\nEso es exactamente lo que hace un sistema de alerta temprana. Eso es lo que hace un boletín de meteorología. Eso es lo que hace un detector de humo a las tres de la mañana.\n\nDios inventó el sistema de alerta temprana. Y lo puso en manos de su pueblo.»');
 }
 
 /* 5 — Tesis */
@@ -252,7 +252,7 @@ function notes(s, t) { s.addNotes(t); }
     fontFace: SERIF, fontSize: 42, bold: true,
     isTextBox: true, margin: 0, valign: 'middle', lineSpacingMultiple: 1.1
   });
-  notes(s, 'De esta frase no se mueva en 90 minutos.');
+  notes(s, 'USTED DICE\n\n«Escuchen bien esta frase, porque de aquí no me voy a mover en noventa minutos:\n\nPrepararse no es desconfiar de Dios. Prepararse es obedecer a Dios.»\n\nUSTED HACE\n\nDígala dos veces. La segunda, más lento. Es la tesis de toda la conferencia y todo lo demás cuelga de ella. No la explique todavía: la próxima diapositiva la sustenta.');
 }
 
 /* 6 — Nehemias 4:9, la conjuncion */
@@ -277,7 +277,7 @@ function notes(s, t) { s.addNotes(t); }
     x: M + 0.5, y: 4.85, w: CW - 1.0, h: 1.6,
     fontFace: SANS, fontSize: 19, color: CREAM, isTextBox: true, margin: 0, valign: 'middle', lineSpacingMultiple: 1.25
   });
-  notes(s, 'Este versiculo resuelve el falso dilema entre orar y prepararse.');
+  notes(s, 'USTED DICE\n\n«Nehemías lo dijo en seis palabras: “Oramos a nuestro Dios, y… pusimos guarda”.\n\nLa conjunción es Y. No es O. Nehemías no escogió entre orar y montar guardia: hizo las dos cosas la misma noche.»\n\nUSTED HACE\n\nSeñale la Y grande de la pantalla. Este versículo resuelve el falso dilema que trae en la cabeza la mitad del auditorio, y al que van a volver cuando usted hable de mochilas y extintores. Déjelo bien clavado aquí.');
 }
 
 /* 7 — Agenda */
@@ -293,15 +293,16 @@ function notes(s, t) { s.addNotes(t); }
     { head: 'La Biblia y los fenómenos naturales', sub: 'Seis verdades que dan suelo firme' },
     { head: 'Ejemplos bíblicos', sub: 'Noé, José, Nehemías, Pablo y Antioquía' }
   ], { y: 2.35, gap: 0.92, headSize: 20 });
-  notes(s, 'Prometa que nadie sale igual: todos salen con un plan escrito.');
+  notes(s, 'USTED DICE\n\n«Vamos a hacer cuatro cosas. Primero, lo práctico: qué hacer ante un terremoto, un ciclón, un maremoto, un incendio y un accidente. Segundo, qué habla Dios ante las emergencias. Tercero, cómo se prepara un cristiano en un mundo lleno de amenazas. Y cuarto, qué nos enseña la Escritura sobre los fenómenos de la naturaleza, con ejemplos bíblicos que van a cambiar la forma en que usted lee esas historias.\n\nY les hago una promesa: nadie sale de aquí igual que como entró. Van a salir con un plan escrito. Uno de verdad.»\n\nTRANSICIÓN\n\n«Empecemos por lo más urgente. Porque si la tierra tiembla mientras hablamos de teología, la teología no le va a servir de nada si no sabe qué hacer con su cuerpo en los próximos diez segundos.»');
 }
 
 /* =========================================================
    BLOQUE 1 — MEDIDAS DE SEGURIDAD
    ========================================================= */
 
-sectionSlide('01', 'Medidas de seguridad', AMBER,
-  'Terremotos · Ciclones · Maremotos · Incendios · Accidentes');
+notes(sectionSlide('01', 'Medidas de seguridad', AMBER,
+  'Terremotos · Ciclones · Maremotos · Incendios · Accidentes'),
+'BLOQUE 1 · 25 minutos\n\nUSTED DICE\n\n«Empecemos por lo más urgente, y después vamos a la Biblia. Porque si la tierra tiembla mientras estamos hablando de teología, la teología no le va a servir de nada si usted no sabe qué hacer con su cuerpo en los próximos diez segundos.»\n\nREGLA DEL BLOQUE\n\nNo intente cubrirlo todo. Enseñe pocas acciones, bien memorizadas. Una acción que la gente recuerda vale más que veinte que olvida.\n\nCONTROLE EL RELOJ\n\nEste es el bloque más fácil de dictar y el que más tienta a extenderse. Si se pasa, le va a quitar minutos al Bloque 2 — que es el corazón de la conferencia.');
 
 /* 9 — Terremoto: las tres palabras */
 {
@@ -330,7 +331,7 @@ sectionSlide('01', 'Medidas de seguridad', AMBER,
     });
   });
   kicker(s, 'Practique los 10 segundos ahora mismo.', QUAKE, 5.9, 21);
-  notes(s, 'Dinamica de 60 segundos: todos de pie, a la cuenta de tres. Cuente diez segundos en voz alta.');
+  notes(s, 'USTED DICE\n\n«El salmista nombra el terremoto. No lo niega, no pretende que no existe. Dice: aunque la tierra sea removida, no temeremos. La fe bíblica no cierra los ojos ante el peligro: los abre y no se paraliza.\n\nY en una emergencia usted no se va a elevar a la altura de sus intenciones. Usted va a caer a la altura de su entrenamiento. Por eso vamos a practicar, no solo a escuchar.»\n\nDINÁMICA (60 segundos — hágala)\n\n«De pie. Todos. A la cuenta de tres: agáchese, cúbrase la cabeza con los brazos, y agárrese de la silla. Uno… dos… tres.»\n\nCuente diez segundos en voz alta. Que sientan lo largos que son.\n\n«Eso fue lo que duró el terremoto que destruyó buena parte de Puerto Príncipe. Diez segundos. Siéntense.»');
 }
 
 /* 10 — Terremoto: lo que NO se hace */
@@ -360,7 +361,7 @@ sectionSlide('01', 'Medidas de seguridad', AMBER,
     });
   });
   kicker(s, 'En la emergencia usted cae a la altura de su entrenamiento.', QUAKE, 5.95, 20);
-  notes(s, 'Corregir el mito del triangulo de la vida es importante: circula mucho en redes.');
+  notes(s, 'USTED DICE\n\n«Ahora lo que NO se hace, que es tan importante como lo anterior.\n\nNo corra mientras tiembla: la mayoría de las lesiones viene de caídas y de objetos que caen, no de derrumbes.\n\nNo se pare en el marco de la puerta: en construcción moderna no es más fuerte que el resto de la pared. Eso lo aprendimos de casas de adobe y se nos quedó pegado.\n\nNunca el ascensor. Ni durante, ni después.\n\nY el último me importa mucho: el llamado “triángulo de la vida”. Circula muchísimo por redes sociales, y los organismos de socorro internacionales NO lo recomiendan. Si usted lo ha compartido, deje de hacerlo.»\n\nUSTED HACE\n\nCierre con la frase de abajo: en la emergencia usted cae a la altura de su entrenamiento.');
 }
 
 /* 11 — Terremoto: despues */
@@ -375,7 +376,7 @@ sectionSlide('01', 'Medidas de seguridad', AMBER,
     { head: 'Calzado cerrado', sub: 'El piso queda lleno de vidrio. Por eso los zapatos van bajo la cama.' },
     { head: 'Mensajes, no llamadas', sub: 'La red se satura. El texto pasa cuando la llamada no.' }
   ], { y: 2.4, gap: 1.0, accent: QUAKE });
-  notes(s, 'Si quedo atrapado: no gritar sin necesidad, golpear una tuberia a intervalos y cubrirse la boca.');
+  notes(s, 'USTED DICE\n\n«Paró el temblor. Los minutos que siguen deciden mucho.\n\nEspere réplicas: van a venir, y son las que tumban lo que quedó debilitado.\n\nNo encienda fósforos, velas ni el interruptor de la luz hasta descartar fuga de gas. Si huele a gas: cierre la válvula, ventile y salga.\n\nRevise heridos a su alrededor antes de salir corriendo.\n\nSalga con calzado cerrado: el piso queda lleno de vidrio. Por eso los zapatos van debajo de la cama.\n\nY use el celular para mensajes de texto, no para llamadas: la red se satura, y el texto pasa cuando la llamada no.»\n\nSI SE LO PREGUNTAN\n\nSi queda atrapado: no grite sin necesidad, porque agota y hace tragar polvo. Golpee una tubería o una pared a intervalos regulares, y cúbrase la boca.');
 }
 
 /* 12 — Terremoto: hoy en su casa */
@@ -401,7 +402,7 @@ sectionSlide('01', 'Medidas de seguridad', AMBER,
     });
   });
   kicker(s, 'El sismo no avisa: todo lo que hará en él lo decidió antes.', QUAKE, 5.95, 21);
-  notes(s, 'Que mas de una persona de la casa sepa donde se cierran el gas y la electricidad.');
+  notes(s, 'USTED DICE\n\n«Dos cosas que puede hacer esta semana, sin gastar casi nada.\n\nPrimera: anclar a la pared lo que puede caerle encima. Estantes altos, armarios, el televisor, el calentador. Y no dormir debajo de repisas, cuadros pesados ni espejos.\n\nSegunda, y es la medida más barata y más subestimada que existe: un par de zapatos y una linterna debajo de la cama.\n\nPorque el sismo no avisa. No hay boletín, no hay temporada, no hay días de preparación. Todo lo que usted va a hacer en un terremoto lo decidió antes.»\n\nAGREGUE\n\nQue más de una persona de la casa sepa dónde está y cómo se cierra la llave del gas, y dónde está el interruptor principal de la electricidad.');
 }
 
 /* 13 — Ciclon: Proverbios 22:3 */
@@ -412,7 +413,7 @@ sectionSlide('01', 'Medidas de seguridad', AMBER,
     { text: '; mas los simples pasan y reciben el daño.', options: { color: CREAM } }
   ], 'Proverbios 22:3', { eyebrow: 'Ciclón · fundamento', accent: CYCLONE, size: 31, th: 2.4 });
   kicker(s, 'El huracán avisa con días. Ver no basta: hay que esconderse.', CYCLONE, 5.95, 22);
-  notes(s, 'Es el unico desastre mayor que da dias de aviso. Su mortalidad es, en su mayoria, evitable.');
+  notes(s, 'USTED DICE\n\n«El huracán es el único desastre que le avisa con días de anticipación. Días. El terremoto no avisa. El huracán sí. Y aun así seguimos perdiendo gente.\n\n¿Por qué? Porque ver el mal no basta. El versículo dice que el avisado ve Y SE ESCONDE. Hay que hacer las dos.»\n\nUSTED HACE\n\nSubraye con la voz las tres palabras resaltadas: “y se esconde”. La mortalidad por ciclón es, en su mayoría, mortalidad evitable — y eso es exactamente lo que está diciendo Proverbios.');
 }
 
 /* 14 — Ciclon: antes */
@@ -443,7 +444,7 @@ sectionSlide('01', 'Medidas de seguridad', AMBER,
     });
   });
   kicker(s, 'Si le toca evacuar, evacúese temprano. Evacuar tarde es la decisión que mata.', CYCLONE, 6.05, 20);
-  notes(s, 'Decidalo hoy, no con el viento encima. Evacuar tarde es la decision que mata.');
+  notes(s, 'USTED DICE\n\n«Hay una pregunta que se contesta en la calma, no con el viento encima: ¿mi casa es de permanencia o de evacuación?\n\nSi usted vive en zona baja, cerca de una cañada, de un río o del mar, usted evacúa. Decídalo hoy. Averigüe hoy cuál es su refugio y cómo se llega caminando.»\n\nRepase la lista de la derecha sin detenerse en cada punto; lo importante es el mensaje de abajo:\n\n«Si le toca evacuar, evacúese temprano. Evacuar tarde es la decisión que mata: se hace de noche, con viento, con las vías ya inundadas. Y lleve la mascota, porque mucha gente se niega a salir por no dejarla.»');
 }
 
 /* 15 — Ciclon: el ojo engaña */
@@ -456,7 +457,7 @@ sectionSlide('01', 'Medidas de seguridad', AMBER,
     x: 1.2, y: 5.0, w: W - 2.4, h: 0.6,
     fontFace: SANS, fontSize: 17, bold: true, color: '0E3A57', align: 'center', isTextBox: true, margin: 0
   });
-  notes(s, 'Mucha gente muere por salir cuando todo se calmo. No salga hasta que la autoridad lo diga.');
+  notes(s, 'USTED DICE\n\n«Esta es la trampa que más gente ha matado en un ciclón.\n\nDe pronto todo se calma. El viento para, sale un pedazo de cielo, se oyen los pájaros. La gente sale a ver los daños, a buscar a un familiar, a mover el carro.\n\nEse es el ojo del huracán. Dura de minutos a una hora. Y después el viento vuelve, del lado contrario, con la misma fuerza o más.\n\nNo salga. No salga hasta que la autoridad lo diga.»\n\nUSTED HACE\n\nDígalo despacio y deje un silencio. Es la diapositiva más importante del bloque de ciclones.');
 }
 
 /* 16 — Ciclon: despues */
@@ -474,7 +475,7 @@ sectionSlide('01', 'Medidas de seguridad', AMBER,
     { head: 'Agua hervida o tratada', sub: 'La segunda ola del desastre es sanitaria.' },
     { head: 'Planta eléctrica siempre afuera', sub: 'El monóxido de carbono no huele y mata familias dormidas.' }
   ], { y: 4.05, gap: 0.95, accent: CYCLONE });
-  notes(s, 'Treinta centimetros de agua en movimiento derriban a un adulto; sesenta arrastran un vehiculo.');
+  notes(s, 'USTED DICE\n\n«Y ahora la fase que más muertes causa, que no es el huracán: es el día después.\n\nNo cruce agua corriendo, ni a pie ni en vehículo. Treinta centímetros de agua en movimiento derriban a un adulto. Sesenta arrastran un vehículo. Si la vía está inundada, dé la vuelta. Es la muerte más evitable de todas, y la que más repetimos cada año.\n\nCables caídos: siempre energizados. Y cuidado con los charcos donde haya cables.\n\nHierva o trate el agua: la segunda ola del desastre es sanitaria — diarrea, leptospirosis.\n\nY la planta eléctrica: jamás dentro de la casa, del garaje, ni cerca de una ventana. El monóxido de carbono no huele, no se ve, y mata familias enteras dormidas.»');
 }
 
 /* 17 — Maremoto: las tres senales */
@@ -502,7 +503,7 @@ sectionSlide('01', 'Medidas de seguridad', AMBER,
     });
   });
   kicker(s, 'Un maremoto local llega en minutos. No hay tiempo para un boletín.', TSUNAMI, 5.95, 20);
-  notes(s, 'El Caribe ha tenido maremotos destructivos con perdida de vidas en nuestras propias costas.');
+  notes(s, 'USTED DICE\n\n«En un maremoto de origen cercano, entre el sismo y la ola pueden pasar pocos minutos. Ningún sistema oficial es más rápido que la señal natural. Por eso hay que conocerlas.\n\nPrimera: un sismo tan fuerte que le cuesta mantenerse de pie, o uno más débil pero que dura mucho, si usted está en la costa.\n\nSegunda: el mar se comporta raro. Se retira y deja el fondo al descubierto, o sube de golpe fuera de la marea.\n\nTercera: un rugido desde el mar, parecido a un tren o a un avión.\n\nCualquiera de las tres, sola, basta para evacuar.»\n\nCONTEXTO\n\n«Esto no es teórico para nosotros. El Caribe ha tenido maremotos destructivos, con pérdida de vidas en nuestras propias costas. La memoria corta es la aliada del desastre.»');
 }
 
 /* 18 — Maremoto: la regla */
@@ -524,7 +525,7 @@ sectionSlide('01', 'Medidas de seguridad', AMBER,
     x: 1.2, y: 5.85, w: W - 2.4, h: 0.5,
     fontFace: SANS, fontSize: 17, bold: true, color: '0C3A2E', align: 'center', isTextBox: true, margin: 0
   });
-  notes(s, 'A pie, no en vehiculo: el tapon de vehiculos ha matado a mas gente que la ola.');
+  notes(s, 'USTED DICE\n\n«Y aquí está la regla — quiero que se la lleven grabada: no espere el aviso oficial. El sismo es el aviso.\n\nSuba. Lo más alto que pueda.\n\nAléjese. Lo más tierra adentro que alcance.\n\nA pie, no en vehículo: el tapón de vehículos ha matado a más gente que la ola.\n\nY no regrese. La primera ola no es la mayor, y el peligro dura horas. Se regresa cuando la autoridad lo autoriza, no antes.»\n\nSI SE LO PREGUNTAN\n\nSi no hay terreno alto y no se puede salir a tiempo, el último recurso es subir a los pisos superiores de una edificación alta y sólida de concreto. Y si está embarcado mar adentro: no entre a puerto, váyase a aguas profundas.');
 }
 
 /* 19 — Genesis 19:17 */
@@ -537,7 +538,7 @@ sectionSlide('01', 'Medidas de seguridad', AMBER,
     { text: ', no sea que perezcas.', options: { color: CREAM } }
   ], 'Génesis 19:17', { eyebrow: 'Maremoto · fundamento', accent: TSUNAMI, size: 30, th: 2.6 });
   kicker(s, 'Sube. No recojas. No mires atrás. Es el protocolo de evacuación, en Génesis 19.', TSUNAMI, 5.95, 21);
-  notes(s, 'La mujer de Lot: el que se detiene o vuelve atras en una evacuacion, perece.');
+  notes(s, 'USTED DICE\n\n«Escuchen esa orden, palabra por palabra: “escapa por tu vida; no mires tras ti… escapa al monte”.\n\nSube. No recojas. No mires atrás.\n\nEse es, literalmente, el protocolo de evacuación ante un maremoto. Y está en Génesis 19.»\n\nAGREGUE\n\n«Y fíjense en lo que le pasó a la mujer de Lot. El que se detiene o vuelve atrás en una evacuación, perece. No es una leyenda para asustar niños: es lo que pasa en toda evacuación real, cuando alguien regresa por algo.»\n\nTambién vale mencionar que al yerno de Lot “le pareció como que se burlaba”. La incredulidad ante la alerta cuesta vidas.');
 }
 
 /* 20 — Incendio: Deuteronomio 22:8 */
@@ -548,7 +549,7 @@ sectionSlide('01', 'Medidas de seguridad', AMBER,
     { text: ', si de ella cayere alguno.', options: { color: CREAM } }
   ], 'Deuteronomio 22:8', { eyebrow: 'Seguridad · fundamento', accent: FIRE, size: 29, th: 2.7 });
   kicker(s, 'La negligencia en seguridad, en la Biblia, tiene categoría moral.', FIRE, 5.95, 23);
-  notes(s, 'Dios le esta dando a Israel un codigo de construccion: baranda obligatoria en la azotea.');
+  notes(s, 'USTED DICE\n\n«Deténganse en este versículo, porque es de los más sorprendentes de la Biblia.\n\nDios le está dando a Israel un código de construcción. Baranda obligatoria en la azotea. ¿Por qué? Escuchen la razón: “para que no eches culpa de sangre sobre tu casa”.\n\nEs decir: si alguien se cae porque tú no pusiste la baranda, eso es culpa tuya delante de Dios.\n\nLéanlo otra vez. La negligencia en seguridad, en la Biblia, tiene categoría moral. No es un descuido administrativo. Es sangre.\n\nEso es lo que Dios piensa de la prevención.»\n\nUSTED HACE\n\nEsta diapositiva sostiene todo el bloque técnico. No la pase rápido.');
 }
 
 /* 21 — Incendio: prevencion */
@@ -563,7 +564,7 @@ sectionSlide('01', 'Medidas de seguridad', AMBER,
     { head: 'Velas', sub: 'Nunca sin vigilancia, nunca al dormirse. En apágon, prefiera linterna.' },
     { head: 'Detector de humo', sub: 'Pruébelo cada mes, cambie la batería cada año. Nunca lo desactive: reubíquelo.' }
   ], { y: 2.3, gap: 0.86, accent: FIRE, headSize: 19 });
-  notes(s, 'El detector de humo es el aparato con mejor relacion costo-vida que existe en una casa.');
+  notes(s, 'USTED DICE\n\n«El incendio casi nunca empieza donde uno cree. Empieza aquí:\n\nElectricidad: tomacorrientes sobrecargados, extensiones encadenadas, cables debajo de alfombras. Un tomacorriente tibio o un olor a quemado es una advertencia, no un detalle.\n\nLa cocina: nunca deje aceite al fuego sin vigilancia. Y si el aceite se enciende, jamás le eche agua: apague la hornilla y tape el sartén.\n\nEl gas: si huele a gas, no encienda la luz, no use el celular, no genere chispa. Cierre la válvula, ventile y salga. Llame desde afuera.\n\nVelas: nunca sin vigilancia, nunca al dormirse. En apagón prefiera linterna.\n\nY el detector de humo: pruébelo cada mes, cambie la batería cada año. Es el aparato con mejor relación costo-vida que existe en una casa. Si suena cuando usted cocina, reubíquelo — no le quite la batería. Un detector sin batería es un detector que no existe.»');
 }
 
 /* 22 — Incendio: el extintor */
@@ -598,7 +599,7 @@ sectionSlide('01', 'Medidas de seguridad', AMBER,
     x: M + 0.45, y: 5.48, w: CW - 0.9, h: 1.1,
     fontFace: SANS, fontSize: 17, color: CREAM, isTextBox: true, margin: 0, valign: 'middle'
   });
-  notes(s, 'Un extintor comun dura entre 10 y 20 segundos. Usted tiene un solo intento.');
+  notes(s, 'USTED DICE\n\n«Cuatro acciones, y se aprenden en treinta segundos.\n\nHale el pasador de seguridad. Apunte a la BASE de la llama, no a las llamas. Apriete la palanca. Y barra de lado a lado.\n\nApuntar a la base es donde falla todo el mundo: la gente le tira al fuego que ve, y el fuego que ve no es el que lo alimenta.»\n\nLA REGLA DE DECISIÓN — es lo más importante de la diapositiva:\n\n«Un extintor sirve para un fuego pequeño y contenido, en su inicio, con la salida a su espalda y con alguien que ya llamó a los bomberos.\n\nSi el fuego está por encima de su cintura, si hay humo denso, si el fuego está entre usted y la salida, o si tiene dudas: no lo pelee. Salga y llame.\n\nUn extintor común dura entre diez y veinte segundos. Usted tiene un solo intento.»');
 }
 
 /* 23 — Incendio: evacuacion */
@@ -617,7 +618,7 @@ sectionSlide('01', 'Medidas de seguridad', AMBER,
     x: M, y: 6.05, w: CW, h: 0.95, align: 'center', valign: 'middle',
     fontFace: SANS, fontSize: 20, bold: true, color: 'FFFFFF', isTextBox: true, margin: 0, charSpacing: 1
   });
-  notes(s, 'Si queda atrapado: selle rendijas, hagase visible desde la ventana, llame indicando ubicacion exacta.');
+  notes(s, 'USTED DICE\n\n«Si no se puede apagar, hay que salir. Y salir bien.\n\nCon humo: agáchese y gatee. El aire respirable y frío está cerca del piso. Arriba está el humo caliente — y el humo es lo que mata, no la llama.\n\nAntes de abrir una puerta, tóquela con el DORSO de la mano. Con el dorso, porque si quema usted retira la mano por reflejo sin quemarse la palma. Si está caliente, no abra: busque otra ruta.\n\nNunca el ascensor.\n\nPunto de encuentro afuera y conteo de personas. Y nadie vuelve a entrar. Por nada: ni por documentos, ni por mascotas, ni por recuerdos.\n\nY si su ropa se enciende: deténgase, tírese al piso y ruede.»\n\nSI SE LO PREGUNTAN\n\nSi queda atrapado en una habitación: selle las rendijas con ropa o toallas, hágase visible desde la ventana y llame indicando su ubicación exacta.');
 }
 
 /* 24 — Accidentes: los tres pasos */
@@ -647,7 +648,7 @@ sectionSlide('01', 'Medidas de seguridad', AMBER,
     });
   });
   kicker(s, 'No mueva al lesionado salvo peligro inminente de muerte.', HELP, 5.85, 21);
-  notes(s, 'Al llamar: que paso, donde exactamente, cuantos lesionados, que riesgos hay, quien es usted.');
+  notes(s, 'USTED DICE\n\n«Miren la secuencia del buen samaritano: se acerca, evalúa, trata la herida con lo que tiene, traslada al herido, lo entrega a un nivel de cuidado mayor y paga la atención continua.\n\nEso es, literalmente, la cadena de atención prehospitalaria. Está en Lucas 10. En el siglo primero.\n\nY lo primero, siempre, son tres pasos.\n\nProteger: su seguridad primero. Un socorrista herido es un paciente más, no una ayuda.\n\nAvisar: llame, o señale a una persona concreta con el dedo para que llame. Si usted grita “que alguien llame”, nadie llama.\n\nSocorrer: atienda primero lo que mata más rápido.»\n\nCÓMO SE LLAMA A EMERGENCIAS\n\nQué pasó, dónde exactamente con una referencia visible, cuántos lesionados, qué riesgos hay en el lugar, y quién es usted. No cuelgue hasta que el operador lo indique.');
 }
 
 /* 25 — Accidentes: cuatro cosas */
@@ -681,15 +682,16 @@ sectionSlide('01', 'Medidas de seguridad', AMBER,
     x: M, y: 5.85, w: CW, h: 1.0, align: 'center', valign: 'middle',
     fontFace: SANS, fontSize: 18, bold: true, color: 'FFFFFF', isTextBox: true, margin: 0
   });
-  notes(s, 'No quiero que salga sintiendose entrenado. Quiero que salga inscribiendose en un entrenamiento.');
+  notes(s, 'USTED DICE\n\n«Cuatro cosas que todo cristiano debería saber hacer.\n\nHemorragia: presión directa, firme y sostenida, con lo más limpio que tenga. No suelte para ver cómo va.\n\nAtragantamiento: si la persona tose con fuerza, no interfiera — la tos es más eficaz que usted. Si no puede toser, hablar ni respirar, compresiones abdominales.\n\nParo cardíaco: si no responde y no respira normal, compresiones fuertes y rápidas en el centro del pecho, sin parar.\n\nQuemaduras: agua a temperatura ambiente unos veinte minutos. Ni hielo, ni pasta de dientes, ni aceite, ni café, ni sábila. Agua.»\n\nY AHORA LO MÁS IMPORTANTE — dígalo mirando a la gente:\n\n«Esto que acabo de decir no lo certifica esta conferencia. Yo se lo presento; la Cruz Roja, los bomberos y Defensa Civil se lo enseñan y se lo certifican.\n\nYo no quiero que usted salga de aquí sintiéndose entrenado. Quiero que salga de aquí inscribiéndose en un entrenamiento.»\n\nTRANSICIÓN\n\n«Ya sabemos qué hacer con las manos. Ahora la pregunta grande: ¿y qué dice Dios de todo esto? Porque alguien está pensando: ¿y esto no es falta de fe?»');
 }
 
 /* =========================================================
    BLOQUE 2 — QUE HABLA DIOS ANTE LAS EMERGENCIAS
    ========================================================= */
 
-sectionSlide('02', '¿Qué habla Dios\nante las emergencias?', AMBER,
-  'Antes · por medio de · en medio de · después');
+notes(sectionSlide('02', '¿Qué habla Dios\nante las emergencias?', AMBER,
+  'Antes · por medio de · en medio de · después'),
+'BLOQUE 2 · 13 minutos\n\nEste es el corazón teológico de la conferencia. Si le falta tiempo, recórtele minutos al Bloque 1, nunca a este.\n\nUSTED DICE\n\n«Ya sabemos qué hacer con las manos. Ahora la pregunta grande, la que nos trajo aquí: ¿y qué dice Dios de todo esto?\n\nPorque yo sé que alguien está pensando: pastor, ¿y todo esto no es falta de fe?»\n\nEL RECORRIDO\n\nDios habla antes del desastre. Dios habla por medio de gente que avisa. Dios habla en medio de la emergencia. Y Dios habla después, mandando a socorrer.');
 
 /* 27 — Dios habla ANTES */
 {
@@ -723,7 +725,7 @@ sectionSlide('02', '¿Qué habla Dios\nante las emergencias?', AMBER,
     x: 1.0, y: 6.3, w: W - 2.0, h: 0.5,
     fontFace: SANS, fontSize: 17, color: MUTED, align: 'center', isTextBox: true, margin: 0
   });
-  notes(s, 'Dios no es un Dios de sorpresas crueles.');
+  notes(s, 'USTED DICE\n\n«Repase la Escritura y verá un patrón que se repite: antes del desastre, Dios habla.\n\nA Noé le avisó del diluvio con generaciones de anticipación.\n\nA Egipto le avisó del granizo, con hora anunciada.\n\nA Lot le avisó de Sodoma y lo sacó de la mano.\n\nA José le avisó del hambre con siete años de anticipación.\n\nPor medio de Agabo avisó de una hambruna que venía sobre el mundo.\n\nY a Pablo le mostró el naufragio antes de que zarparan.\n\nDios no es un Dios de sorpresas crueles. Dios avisa. El problema nunca ha sido el silencio de Dios: ha sido la sordera del hombre.»\n\nUSTED HACE\n\nVaya nombrando y señalando cada tarjeta. El efecto acumulativo es el argumento.');
 }
 
 /* 28 — Exodo 9:20-21 */
@@ -762,7 +764,7 @@ sectionSlide('02', '¿Qué habla Dios\nante las emergencias?', AMBER,
   });
 
   kicker(s, 'Toda la gestión de riesgo, en dos versículos. El problema no es la alerta: es la respuesta.', AMBER, 5.6, 21);
-  notes(s, 'El texto perfecto para explicar por que una alerta bien emitida sigue costando vidas.');
+  notes(s, 'USTED DICE\n\n«Quiero detenerme en Egipto, porque el texto dice algo notable.\n\nDios anuncia el granizo con hora. Y el relato dice: “el que tuvo temor de la palabra de Jehová hizo huir sus criados y su ganado a casa; mas el que no puso en su corazón la palabra de Jehová, dejó sus criados y sus ganados en el campo”.\n\nMisma alerta. Dos respuestas. Dos resultados.\n\nAhí está toda la gestión de riesgo en dos versículos. Y ahí está la respuesta a por qué, con boletines, con radio, con celulares y con alerta roja declarada, seguimos contando muertos.\n\nEl problema no es la alerta. Es la respuesta.»\n\nUSTED HACE\n\nSeñale las dos columnas. Que la gente vea el contraste antes de que usted lo explique.');
 }
 
 /* 29 — Dios habla por medio de gente que avisa */
@@ -778,7 +780,7 @@ sectionSlide('02', '¿Qué habla Dios\nante las emergencias?', AMBER,
     { head: 'La reacción esperada — Amós 3:6', sub: '¿Se tocará la trompeta en la ciudad, y no se alborotará el pueblo?' }
   ], { y: 2.35, gap: 0.98 });
   kicker(s, 'El atalaya no siempre lleva púlpito. A veces lleva casco.', AMBER, 6.25, 22);
-  notes(s, 'El boletin de meteorologia, la alerta de Defensa Civil y la sirena del bombero cumplen una funcion que la Biblia considera sagrada.');
+  notes(s, 'USTED DICE\n\n«Dios no solo avisa: Dios levanta gente que avisa, y le da a ese oficio una dignidad enorme.\n\nEl atalaya de Ezequiel 33, puesto en la muralla para ver antes que nadie.\n\nLas trompetas de plata de Números 10: un sistema de señales acordado, con un toque para convocar y otro para dar alarma.\n\nNehemías 4:20: “donde oyereis el sonido de la trompeta, reuníos allí con nosotros”. Eso es un punto de encuentro. Nehemías tenía punto de encuentro.\n\nY Amós 3:6: “¿se tocará la trompeta en la ciudad, y no se alborotará el pueblo?”. Amós da por sentado que la reacción normal ante una alarma es moverse, no quedarse discutiendo si es real.»\n\nCIERRE DE LA DIAPOSITIVA\n\n«Cuando la oficina de meteorología emite un boletín, cuando Defensa Civil declara alerta, cuando el bombero toca la sirena: están cumpliendo una función que la Biblia considera sagrada.\n\nEl atalaya no siempre lleva púlpito. A veces lleva casco.»');
 }
 
 /* 30 — Dios habla DESPUES: socorro */
@@ -814,7 +816,7 @@ sectionSlide('02', '¿Qué habla Dios\nante las emergencias?', AMBER,
     x: M, y: 4.95, w: CW, h: 1.75, align: 'center', valign: 'middle',
     fontFace: SERIF, fontSize: 34, bold: true, color: INK, isTextBox: true, margin: 0, lineSpacingMultiple: 1.05
   });
-  notes(s, 'Despues del desastre, que queda en pie en el barrio? El templo. Quien tiene la lista de los ancianos solos? Nosotros.');
+  notes(s, 'USTED DICE\n\n«Y después del desastre, Dios manda a socorrer.\n\nMiren la palabra que usa Hechos 11: los discípulos, cada uno conforme a lo que tenía, determinaron enviar SOCORRO. Ahí está la palabra.\n\nY miren el método: aporte según capacidad, recolección organizada, envío por manos responsables. Es una operación de ayuda humanitaria con rendición de cuentas. En el siglo primero.»\n\nAHORA DÍGALO CON TODAS SUS LETRAS\n\n«La iglesia es un organismo de socorro. No metafóricamente.\n\nDespués del desastre, ¿qué queda en pie en el barrio? El templo. ¿Quién tiene la lista de los ancianos que viven solos? Nosotros. ¿Quién puede convocar a cien voluntarios en una hora, sin presupuesto y sin contrato? Nosotros.\n\nSomos, en muchas comunidades, el primer respondiente después del vecino. La pregunta no es si vamos a responder. La pregunta es si vamos a responder preparados o improvisando.»\n\nTRANSICIÓN\n\n«Entonces, si Dios avisa, si Dios manda a avisar y si Dios manda a socorrer, la pregunta se cae de madura: ¿cómo se prepara un cristiano?»');
 }
 
 /* =========================================================
@@ -856,7 +858,7 @@ sectionSlide('02', '¿Qué habla Dios\nante las emergencias?', AMBER,
     x: M, y: 5.15, w: CW, h: 1.75, align: 'center', valign: 'middle',
     isTextBox: true, margin: 0, lineSpacingMultiple: 1.3
   });
-  notes(s, 'Alista el caballo. Confia en Jehova. Las dos cosas, en la misma frase.');
+  notes(s, 'USTED DICE\n\n«Hay dos errores, y los dos son peligrosos.\n\nEl primero: el fatalismo espiritual. “Si Dios me va a guardar, ¿para qué me preparo?”. Suena espiritual. No lo es. Es la misma lógica que usó Satanás en la tentación: tírate del pináculo, que los ángeles te sostendrán. ¿Y qué contestó Jesús? “No tentarás al Señor tu Dios”.\n\nExponerse voluntariamente al peligro y llamarlo fe, Jesús lo llamó tentar a Dios.\n\nEl segundo: el pánico acumulador. El que ve noticias todo el día, llena la casa de provisiones y vive con el estómago apretado. Eso tampoco es fe. Eso es miedo con logística.\n\nEntre esos dos extremos está el camino bíblico: prudencia serena.\n\nProverbios 21:31 lo dice perfecto: “el caballo se alista para el día de la batalla; mas Jehová es el que da la victoria”.\n\nAlista el caballo. Confía en Jehová. Las dos cosas, en la misma frase.»');
 }
 
 /* 32 — Los siete niveles */
@@ -890,7 +892,7 @@ sectionSlide('02', '¿Qué habla Dios\nante las emergencias?', AMBER,
     });
   });
   kicker(s, 'El día del desastre, el que llega primero es el que ya estaba ahí.', AMBER, 5.95, 22);
-  notes(s, 'El nivel 7 es el llamado mas concreto: que en cada celula haya al menos una persona certificada.');
+  notes(s, 'USTED DICE\n\nNo desarrolle los siete. Nómbrelos y deténgase en dos o tres.\n\n«Espiritual: ninguna mochila le sirve si su casa no está sobre la roca. Y fíjense que en esa parábola las dos casas reciben la misma tormenta. La diferencia no estuvo en el clima: estuvo en el cimiento.\n\nMental: infórmese de fuentes oficiales, no de cadenas de WhatsApp. Compartir un rumor en una emergencia es dar falso testimonio con consecuencias físicas. Y racione la noticia: Dios no nos dio espíritu de cobardía, sino de dominio propio.\n\nCuerpo y casa: mochila de setenta y dos horas, botiquín con los medicamentos crónicos de la familia — que es lo que más se olvida y lo que más falta hace.\n\nEconómica: José guardó la quinta parte en los años buenos. Un porcentaje, con disciplina, durante siete años.»\n\nUSTED HACE\n\nAquí abra la mochila de emergencia que trajo y saque las cosas una por una. Una mochila real vale más que tres diapositivas.\n\nEL NIVEL 7 ES EL LLAMADO\n\n«No basta con estar a salvo: Dios nos llamó a socorrer. Quiero que en cada célula, en cada ministerio, haya por lo menos una persona certificada en primeros auxilios. Porque el día del desastre, el que llega primero no es el experto que viene de lejos. El que llega primero es el que ya estaba ahí. Y ese, muchas veces, somos nosotros.»');
 }
 
 /* 33 — Las cinco preguntas */
@@ -916,15 +918,16 @@ sectionSlide('02', '¿Qué habla Dios\nante las emergencias?', AMBER,
     y += 0.8;
   });
   kicker(s, 'Un plan que solo existe en su cabeza no es un plan: es una intención.', AMBER, 6.55, 20);
-  notes(s, 'Hagalo esta semana, en la mesa, con los muchachos. Corto, claro, y que todos lo sepan.');
+  notes(s, 'USTED DICE\n\n«Cinco preguntas que toda familia debe poder responder sin pensar.\n\n¿Cuál es nuestro punto de encuentro si no podemos volver a la casa?\n\n¿Cuál es el segundo punto, fuera del barrio, si no se puede entrar a la zona?\n\n¿Quién es nuestro contacto fuera de la ciudad, al que todos llamamos si no logramos comunicarnos entre nosotros?\n\n¿Quién recoge a los niños, y la escuela sabe que esa persona está autorizada?\n\nY ¿quién responde por el familiar vulnerable: el anciano, el enfermo, la persona con discapacidad, la embarazada?»\n\nEL REMATE\n\n«Ese plan hay que escribirlo y practicarlo. Un plan que solo existe en su cabeza no es un plan: es una intención.\n\nHáganlo esta semana, en la mesa, con los muchachos. Que sea corto. Que sea claro. Que todos lo sepan. Está en la hoja que les entregamos, en el reverso.»\n\nTRANSICIÓN\n\n«Ahora bien, hay una pregunta que no podemos esquivar, porque es la que la gente hace de verdad cuando el techo se cae: ¿por qué? ¿Es Dios el que manda el huracán?»');
 }
 
 /* =========================================================
    BLOQUE 4 — LA BIBLIA Y LOS FENOMENOS NATURALES
    ========================================================= */
 
-sectionSlide('03', '¿Qué enseña la Biblia\nsobre los fenómenos\nde la naturaleza?', AMBER,
-  'Seis verdades para no quedarse sin suelo');
+notes(sectionSlide('03', '¿Qué enseña la Biblia\nsobre los fenómenos\nde la naturaleza?', AMBER,
+  'Seis verdades para no quedarse sin suelo'),
+'BLOQUE 4 · 13 minutos\n\nADVERTENCIA PASTORAL\n\nAquí hay dolor real en el auditorio. Habrá quien perdió casa, o perdió gente. Hable despacio y no use este bloque para especular sobre profecía. Úselo para dar suelo firme.\n\nUSTED DICE\n\n«Hay una pregunta que no podemos esquivar, porque es la que la gente hace de verdad cuando el techo se cae: ¿por qué?\n\n¿Es Dios el que manda el huracán? ¿Es castigo? ¿Qué enseña la Biblia sobre los fenómenos de la naturaleza?»\n\nSi sabe que hay personas de duelo en la sala, reconózcalo aquí: «sé que aquí hay quien enterró a alguien después de una tormenta; lo que voy a decir lo digo con respeto, no desde la teoría».');
 
 /* 35 — Seis verdades */
 {
@@ -957,7 +960,7 @@ sectionSlide('03', '¿Qué enseña la Biblia\nsobre los fenómenos\nde la natura
     });
   });
   kicker(s, 'La cuarta es la más importante de todas.', AMBER, 6.55, 19);
-  notes(s, 'Aqui hay dolor real en el auditorio. Hable despacio. No especule sobre profecia.');
+  notes(s, 'ADVERTENCIA PASTORAL\n\nAquí hay dolor real en el auditorio. Habrá quien perdió casa, o perdió gente. Hable despacio. Si lo sabe, dígalo al entrar: «sé que aquí hay quien enterró a alguien después de una tormenta; lo que voy a decir lo digo con respeto, no desde la teoría». No use este bloque para especular sobre profecía.\n\nUSTED DICE — verdad por verdad\n\n«Uno: la creación es de Dios, y Él le puso límites. Dios le dice al mar: “hasta aquí llegarás”. El mar tiene un límite, y el límite no se lo puso el mar.\n\nDos: la creación está herida y gime. Y fíjense en la imagen que escoge Pablo: dolores de parto. No es la agonía de algo que se muere: es el dolor de algo que está por nacer.\n\nTres: hay un orden natural que Dios sostiene. Las placas se mueven porque la tierra es un planeta vivo. Los ciclones se forman porque el mar se calienta. Eso no es magia negra ni es demonio: es física — y la física la escribió Dios.\n\nCuatro, y es la más importante: la Biblia prohíbe culpar a la víctima. La vemos en la próxima diapositiva.\n\nCinco: Dios habla, pero no se reduce al fenómeno. Elías lo esperaba en el viento, en el terremoto y en el fuego, y Dios llegó en un silbo apacible.\n\nSeis: la historia no termina en catástrofe. Termina con Dios secando lágrimas, una por una, con sus manos.»');
 }
 
 /* 36 — Lucas 13 */
@@ -967,7 +970,7 @@ sectionSlide('03', '¿Qué enseña la Biblia\nsobre los fenómenos\nde la natura
     { text: 'Os digo: No.', options: { color: AMBER, bold: true } }
   ], 'Lucas 13:4-5', { eyebrow: 'Jesús, con una tragedia sobre la mesa', size: 26, th: 3.1 });
   kicker(s, 'La tragedia ajena no es material de diagnóstico. Es llamado propio.', AMBER, 5.95, 22);
-  notes(s, 'Jesus rechaza expresamente la ecuacion "les paso porque eran peores". Job 42:7 dice lo mismo de los amigos de Job.');
+  notes(s, 'USTED DICE\n\n«Le cuentan a Jesús de una tragedia, y Él mismo trae otra: la torre de Siloé, que cayó y mató a dieciocho personas.\n\nY pregunta: “¿pensáis que eran más culpables que todos los hombres que habitan en Jerusalén?”.\n\nY contesta Él mismo: “Os digo: No”.\n\nJesús, con una tragedia sobre la mesa, rechaza expresamente la ecuación “les pasó porque eran peores”. La rechaza. Y en vez de darles un culpable les da un espejo: “si no os arrepentís, todos pereceréis igualmente”.\n\nLa tragedia ajena no es material de diagnóstico. Es llamado propio.»\n\nSI QUIERE REFORZAR\n\nLos amigos de Job hicieron exactamente lo que Jesús prohíbe, y al final Dios les dijo que no habían hablado de Él lo recto (Job 42:7). Y en Juan 9, ante la pregunta “¿quién pecó, éste o sus padres?”, Jesús responde que ni uno ni otro: la pregunta estaba mal formulada.');
 }
 
 /* 37 — La respuesta correcta */
@@ -989,15 +992,16 @@ sectionSlide('03', '¿Qué enseña la Biblia\nsobre los fenómenos\nde la natura
     x: 1.3, y: 6.1, w: W - 2.6, h: 0.5,
     fontFace: SANS, fontSize: 16, color: MUTED, align: 'center', isTextBox: true, margin: 0
   });
-  notes(s, 'Este es el punto pastoral del bloque. Digalo despacio.');
+  notes(s, 'USTED DICE\n\nEste es el punto pastoral del bloque. Dígalo despacio, sin levantar la voz.\n\n«Entonces, cuando pase un desastre, no salga a decir por qué Dios lo mandó.\n\nSalga con agua, con comida y con brazos.\n\nLa teología del que sufre se hace cargando colchones, no dando explicaciones.»\n\nUSTED HACE\n\nDeje un silencio después de la última frase. Luego pase a los ejemplos bíblicos con la transición:\n\n«Déjenme cerrar mostrándoles gente. Porque la Biblia no nos dio una teoría del desastre: nos dio rostros.»');
 }
 
 /* =========================================================
    BLOQUE 5 — EJEMPLOS BIBLICOS
    ========================================================= */
 
-sectionSlide('04', 'Ejemplos bíblicos', AMBER,
-  'La Biblia no nos dio una teoría del desastre: nos dio rostros');
+notes(sectionSlide('04', 'Ejemplos bíblicos', AMBER,
+  'La Biblia no nos dio una teoría del desastre: nos dio rostros'),
+'BLOQUE 5 · 10 minutos\n\nUSTED DICE\n\n«Déjenme cerrar mostrándoles gente. Porque la Biblia no nos dio una teoría del desastre: nos dio rostros.»\n\nRITMO\n\nSon cinco ejemplos en diez minutos. Minuto y medio cada uno. No los desarrolle todos ni se enamore de uno: el peso acumulado es el argumento.\n\nSI LE FALTA TIEMPO\n\nQuédese con tres: Noé (prevención), José (planificación) y Hechos 27 (la promesa no sustituye a la tripulación).');
 
 /* 39 — Noe */
 {
@@ -1014,7 +1018,7 @@ sectionSlide('04', 'Ejemplos bíblicos', AMBER,
     { head: 'Preparó el arca', sub: 'Con medidas exactas, material especificado y provisiones. La fe se midió en codos.' }
   ], { y: 2.9, gap: 1.05 });
   kicker(s, 'Prevención es trabajar hoy por un riesgo que hoy no se ve.', AMBER, 6.15, 22);
-  notes(s, 'El arca fue "en que su casa se salvase": la preparacion del creyente cubre a los suyos.');
+  notes(s, 'USTED DICE\n\n«“Por la fe Noé, cuando fue advertido por Dios acerca de cosas que aún no se veían, con temor preparó el arca en que su casa se salvase”.\n\nSubrayen tres cosas de ese versículo: fue ADVERTIDO; las cosas AÚN NO SE VEÍAN; y él PREPARÓ.\n\nLa construcción del arca fue un acto de fe con planos, con medidas y con materiales. Dios le dio dimensiones exactas y un tipo de madera. La fe de Noé se midió en codos.\n\nY aquí está lo que más me impresiona: Noé se preparó años antes, mientras el cielo seguía azul y los vecinos se reían.\n\nEso es prevención: trabajar hoy por un riesgo que hoy no se ve.»\n\nAGREGUE\n\nEl arca fue “en que su casa se salvase”: la preparación del creyente cubre a los suyos, no solo a él.');
 }
 
 /* 40 — Jose */
@@ -1052,7 +1056,7 @@ sectionSlide('04', 'Ejemplos bíblicos', AMBER,
     x: M, y: 6.25, w: CW, h: 0.5,
     fontFace: SANS, fontSize: 15, color: MUTED, isTextBox: true, margin: 0
   });
-  notes(s, 'Es el modelo biblico del plan nacional de gestion de riesgo y del fondo de contingencia.');
+  notes(s, 'USTED DICE\n\n«José recibe el aviso de siete años de hambre, y no monta una campaña de oración solamente: diseña un plan de veinte años.\n\nNombra un responsable. Establece una reserva del veinte por ciento. Construye almacenes. Administra el inventario. Y en la crisis distribuye ordenadamente.\n\nEl texto dice que guardaron “como la arena del mar, mucho en extremo, hasta no poderse contar”.\n\nResultado: Egipto no pereció de hambre, y las naciones de alrededor tampoco, porque venían a comprar.\n\nLa previsión de un hombre justo alimentó a un continente.»\n\nEL PUENTE A HOY\n\n«Eso es lo que hace hoy un plan nacional de gestión de riesgo, una reserva estratégica, un fondo de contingencia. Y su modelo es José.\n\nY fíjense que José no lo guardó todo ni lo consumió todo: guardó un porcentaje, con disciplina, durante siete años seguidos. Eso es lo que hace falta en una casa y en una iglesia.»');
 }
 
 /* 41 — Nehemias */
@@ -1087,7 +1091,7 @@ sectionSlide('04', 'Ejemplos bíblicos', AMBER,
     });
   });
   kicker(s, 'Siglo quinto antes de Cristo. Ya tenían punto de encuentro.', AMBER, 5.5, 22);
-  notes(s, 'Nehemias 4:20 es el punto de encuentro: "donde oyereis el sonido de la trompeta, reunios alli".');
+  notes(s, 'USTED DICE\n\n«Amenaza real, enemigos reales. ¿Qué hizo Nehemías? “Oramos a nuestro Dios, y por causa de ellos pusimos guarda contra ellos de día y de noche”.\n\nY montó un sistema completo. Miren:\n\nVigilancia: turnos de día y de noche, con relevo.\n\nAlerta: un trompetista al lado del líder, para que la señal saliera de un solo punto.\n\nConcentración: un punto de reunión acordado de antemano — “en el lugar donde oyereis el sonido de la trompeta, reuníos allí con nosotros”.\n\nRespuesta: una mano en la obra, la otra en el arma.\n\nAlerta, evacuación, concentración, respuesta. Nehemías tenía un protocolo de emergencia. En el siglo quinto antes de Cristo.\n\nY no dejó de construir el muro por eso.»');
 }
 
 /* 42 — Pablo, Hechos 27 */
@@ -1130,7 +1134,7 @@ sectionSlide('04', 'Ejemplos bíblicos', AMBER,
     fontFace: SANS, fontSize: 17, bold: true, color: '4A3410', align: 'center', valign: 'top', isTextBox: true, margin: 0, lineSpacingMultiple: 1.1
   });
   kicker(s, 'Un preso a bordo terminó dirigiendo el rescate.', AMBER, 6.2, 21);
-  notes(s, 'Tenia a la vez palabra de Dios y cabeza fria. Esa combinacion es la que hace falta en la cubierta.');
+  notes(s, 'USTED DICE\n\nCuente la historia, no la lea. Vaya señalando cada línea.\n\n«Uno: Pablo advierte el riesgo antes de zarpar. Y le ignoran. Al experto lo ignoran, porque el piloto y el dueño del barco tenían prisa. Eso pasa todos los días.\n\nDos: cuando revienta la tormenta, Pablo no dice “se lo dije”. Se pone de pie y dice: “tened buen ánimo”.\n\nTres: y da la razón de su calma. “Creo a Dios que será así como se me ha dicho”. Su serenidad tenía fundamento: no era negación.\n\nCuatro: detecta a los marineros que intentaban escapar en la lancha y avisa: “si éstos no permanecen en la nave, vosotros no podéis salvaros”.\n\nCinco: los hace comer para que tengan fuerzas. Cuida lo físico, no solo lo espiritual.\n\nSeis: da gracias a Dios delante de todos, en medio del temporal.\n\nY el versículo 44: “y así aconteció que todos se salvaron saliendo a tierra”. Doscientas setenta y seis personas. Ni una perdida.\n\nUn preso a bordo terminó dirigiendo el rescate, porque era el único que tenía a la vez palabra de Dios y cabeza fría.»');
 }
 
 /* 43 — Hechos 27:31 */
@@ -1141,7 +1145,7 @@ sectionSlide('04', 'Ejemplos bíblicos', AMBER,
     { text: ', vosotros no podéis salvaros.', options: { color: CREAM } }
   ], 'Hechos 27:31', { eyebrow: 'La joya del capítulo', size: 33, th: 2.2 });
   kicker(s, 'La promesa de Dios no sustituye a la tripulación.', AMBER, 5.95, 26);
-  notes(s, 'Dios habia prometido que todos se salvarian, y aun asi hacia falta que los hombres capacitados se quedaran en su puesto.');
+  notes(s, 'USTED DICE\n\n«Quiero que se lleven este versículo por encima de todos los demás de la noche.\n\nDios ya había prometido, por boca de un ángel, que no se perdería ni una sola vida. Ya estaba prometido.\n\nY aun así, cuando los marineros intentan huir en la lancha, Pablo dice: “si éstos no permanecen en la nave, vosotros no podéis salvaros”.\n\nEscuchen bien: la promesa de Dios no anulaba la necesidad de la tripulación. Hacía falta que los hombres capacitados se quedaran en su puesto.\n\nLa promesa de Dios no sustituye a la tripulación.\n\nEscriban eso. Porque cada vez que alguien diga que prepararse es falta de fe, la respuesta está en Hechos 27:31.»\n\nUSTED HACE\n\nDeje silencio después de la frase final. Es el cierre argumental de toda la conferencia.');
 }
 
 /* 44 — Antioquia */
@@ -1181,7 +1185,7 @@ sectionSlide('04', 'Ejemplos bíblicos', AMBER,
     }
   });
   kicker(s, 'Cuando esta iglesia organiza un centro de acopio, no está copiando a las ONG:\nestá copiando a Antioquía.', AMBER, 5.45, 22);
-  notes(s, 'Es una operacion de ayuda humanitaria con destino verificado y rendicion de cuentas. 2 Corintios 8:20-21.');
+  notes(s, 'USTED DICE\n\n«Llega Agabo a Antioquía y anuncia una gran hambre. ¿Qué hace la iglesia?\n\n“Entonces los discípulos, cada uno conforme a lo que tenía, determinaron enviar socorro a los hermanos”.\n\nMiren la cadena: aviso, decisión, aporte según capacidad, recolección, y envío por manos responsables — Bernabé y Saulo.\n\nEso, hermanos, es un operativo de ayuda humanitaria, con transparencia y con destino verificado. Y nació de una iglesia local.\n\nCuando esta iglesia organiza un centro de acopio, no está copiando a las ONG. Está copiando a Antioquía.»\n\nSI QUIERE AGREGAR\n\nPablo organiza otra colecta en 2 Corintios 8 y 9, y ahí dice algo que toda iglesia debería tener enmarcado: “evitando que nadie nos censure en cuanto a esta ofrenda abundante”. Transparencia total en el manejo de la ayuda.\n\nMENCIÓN RÁPIDA (30 segundos, si hay tiempo)\n\nLas ciudades de refugio de Números 35 y Josué 20: refugios designados de antemano, distribuidos geográficamente, con los caminos arreglados para que el que huye llegue a tiempo. Y Rahab en Josué 2: la señal en la ventana, la familia reunida adentro, y la instrucción de no salir de la casa.');
 }
 
 /* =========================================================
@@ -1214,7 +1218,7 @@ sectionSlide('04', 'Ejemplos bíblicos', AMBER,
       fontFace: SANS, fontSize: 14, color: MUTED, isTextBox: true, margin: 0, valign: 'top'
     });
   });
-  notes(s, 'Cuatro frases, no mas. Despues pase directo al llamado.');
+  notes(s, 'USTED DICE\n\nCuatro frases, no más. No las desarrolle: ya las desarrolló toda la noche. Después pase directo al llamado.\n\n«Cuatro cosas para llevarse:\n\nUno: Dios avisa. Siempre avisó. Antes de Noé, antes de José, antes del naufragio. El sistema de alerta temprana es idea suya.\n\nDos: prepararse es obediencia, no incredulidad. Oramos Y ponemos guarda.\n\nTres: la tragedia no es sentencia. Jesús mismo prohibió esa lectura en Lucas 13. Frente al que sufre no vamos con explicaciones: vamos con las manos.\n\nCuatro: la iglesia es un organismo de socorro. Y el que llega primero es el que ya estaba ahí.»');
 }
 
 /* 46 — Tres compromisos */
@@ -1244,7 +1248,7 @@ sectionSlide('04', 'Ejemplos bíblicos', AMBER,
     });
   });
   kicker(s, 'Eso es amar al prójimo con un plan.', AMBER, 6.1, 23);
-  notes(s, 'Pida que levanten la mano para la lista de la brigada. Que salgan nombres anotados de verdad.');
+  notes(s, 'USTED DICE\n\n«No quiero aplausos. Quiero decisiones. Tres, y son de esta semana.\n\nPrimero, el plan de mi casa. Esta semana, en la mesa, con la familia: punto de encuentro, contacto, mochila. Está en la hoja que les entregamos, en el reverso. Escríbanlo. No lo piensen: escríbanlo.\n\nSegundo, capacitarme. Quiero que salgan de aquí nombres anotados para el curso de primeros auxilios y para la brigada de esta iglesia.»\n\nUSTED HACE\n\nPida que levanten la mano ahora mismo. Tenga a alguien anotando nombres de verdad, con papel, en la puerta. Si no sale una lista esta noche, no sale nunca.\n\nUSTED DICE\n\n«Y tercero, mi vecino. Piense en una persona de su cuadra que no podría salir sola: el anciano, el enfermo, la señora con el niño pequeño, la persona con discapacidad.\n\nPóngale nombre. Ahora mismo, en su mente, póngale nombre.\n\nY comprométase delante de Dios a que, si pasa algo, usted toca esa puerta antes de irse.\n\nEso es amar al prójimo con un plan.»');
 }
 
 /* 47 — Final */
@@ -1265,7 +1269,7 @@ sectionSlide('04', 'Ejemplos bíblicos', AMBER,
     x: 1.3, y: 6.35, w: W - 2.6, h: 0.4,
     fontFace: SANS, fontSize: 14, bold: true, color: DIM, charSpacing: 3, align: 'center', isTextBox: true, margin: 0
   });
-  notes(s, 'Cierre con la oracion sugerida en el guion.');
+  notes(s, 'USTED DICE\n\n«Termino donde empecé, con el atalaya de Ezequiel.\n\nEl atalaya no podía detener la espada. Usted no puede detener el huracán, ni el temblor, ni el fuego. Nadie se lo está pidiendo.\n\nPero el atalaya sí podía ver a tiempo y avisar a tiempo. Y de eso, dice Dios, sí somos responsables.\n\nHoy usted vio. Ya no puede decir que no sabía.\n\nAhora toque la trompeta en su casa.»\n\nORACIÓN DE CIERRE\n\n«Señor, tú eres nuestro amparo y fortaleza, nuestro pronto auxilio en las tribulaciones. Gracias porque nunca nos has dejado sin aviso. Perdónanos por las veces que llamamos fe a lo que era descuido, y por las veces que llamamos prudencia a lo que era miedo. Danos manos preparadas y corazón sereno. Que cuando la tierra se mueva, tu pueblo no corra: sirva. Y haznos, en el barrio donde nos pusiste, la casa a la que la gente sabe que puede tocar. En el nombre de Jesús, amén.»\n\nDESPUÉS\n\nQuédese disponible. Alguien va a querer hablar.');
 }
 
 const out = process.argv[2] || 'deck.pptx';
