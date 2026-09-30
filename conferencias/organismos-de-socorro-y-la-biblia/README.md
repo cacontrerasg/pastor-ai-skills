@@ -18,6 +18,8 @@ material para el participante y esquema de diapositivas.
 | `04-hoja-del-participante.md` | Material imprimible de una hoja (frente y vuelta) | Asistentes |
 | `05-esquema-diapositivas.md` | Guion de 47 diapositivas (reducibles a 34), listo para montar | Quien monte el deck |
 | `06-plan-de-emergencia-de-la-iglesia.md` | Plantilla de plan y brigada para el local de reunión | Liderazgo / comité |
+| `Organismos de Socorro y la Biblia.pptx` | El deck montado y listo para proyectar (47 diapositivas) | Conferencista |
+| `generar-deck.js` | Script que genera el .pptx, por si hay que reeditarlo | Quien ajuste el deck |
 
 ---
 
@@ -64,6 +66,31 @@ El guion sigue el orden temático que definió el conferencista:
 quiere entrar por lo bíblico, intercambie los bloques 1 y 4. La conferencia
 abriría con la teología de la creación y cerraría con las medidas prácticas como
 aplicación. El guion está escrito para que ambos órdenes funcionen.
+
+---
+
+## El deck
+
+`Organismos de Socorro y la Biblia.pptx` está listo para proyectar: 47
+diapositivas en formato 16:9, fondo oscuro (pensado para templos con luz
+ambiental), tipografías Cambria y Calibri —ambas estándar de Office, así que no
+hay que instalar nada— y notas del orador en cada diapositiva.
+
+El código de color sigue el del esquema: ámbar para el hilo bíblico, y un color
+por amenaza en el Bloque 1 (naranja terremoto, azul ciclón, verde maremoto, rojo
+incendio, gris accidentes).
+
+**Para reeditarlo:** el deck se genera desde `generar-deck.js`. Con Node
+instalado:
+
+```bash
+npm install pptxgenjs
+node generar-deck.js "Organismos de Socorro y la Biblia.pptx"
+```
+
+Editar el script y regenerar es más confiable que mover cajas a mano en
+PowerPoint, sobre todo si se cambia el texto de varias diapositivas. Aun así, el
+.pptx es un archivo normal: se puede abrir y ajustar directamente sin problema.
 
 ---
 
