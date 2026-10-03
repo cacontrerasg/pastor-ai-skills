@@ -19,8 +19,9 @@ material para el participante y esquema de diapositivas.
 | `05-esquema-diapositivas.md` | Guion de 47 diapositivas (reducibles a 34), listo para montar | Quien monte el deck |
 | `06-plan-de-emergencia-de-la-iglesia.md` | Plantilla de plan y brigada para el local de reunión | Liderazgo / comité |
 | `Guion - Organismos de Socorro y la Biblia.docx` | El guion en Word, listo para imprimir (20 páginas) | Conferencista |
-| `Organismos de Socorro y la Biblia.pptx` | El deck montado y listo para proyectar (47 diapositivas) | Conferencista |
-| `generar-deck.js` | Script que genera el .pptx, por si hay que reeditarlo | Quien ajuste el deck |
+| `Organismos de Socorro y la Biblia - 45 min.pptx` | **El deck de 45 minutos** (35 diapositivas) | Conferencista |
+| `Organismos de Socorro y la Biblia - 90 min.pptx` | El deck de la versión completa (47 diapositivas) | Conferencista |
+| `generar-deck-45.js` · `generar-deck-90.js` | Scripts que generan cada .pptx | Quien ajuste el deck |
 | `generar-guion-docx.js` | Script que convierte el guion .md en el .docx | Quien ajuste el documento |
 
 ---
@@ -99,12 +100,37 @@ separan.
 
 ---
 
-## El deck
+## Los dos decks
 
-`Organismos de Socorro y la Biblia.pptx` está listo para proyectar: 47
-diapositivas en formato 16:9, fondo oscuro (pensado para templos con luz
+Hay dos presentaciones, según el tiempo que le den:
+
+| | Diapositivas | Para |
+|---|---|---|
+| **45 min** | 35 | El slot habitual de una conferencia o una noche de iglesia |
+| **90 min** | 47 | La versión completa, con todo el temario |
+
+Ambas comparten diseño: 16:9, fondo oscuro (pensado para templos con luz
 ambiental), tipografías Cambria y Calibri —ambas estándar de Office, así que no
 hay que instalar nada— y notas del orador en cada diapositiva.
+
+### Qué cambia en la versión de 45 minutos
+
+Sigue el recorte que el propio guion define:
+
+| Bloque | Min | Ajuste |
+|---|---|---|
+| Apertura | 5 | Sin diapositiva de agenda |
+| Medidas de seguridad | 12 | Solo terremoto, ciclón e incendio |
+| ¿Qué habla Dios ante las emergencias? | 10 | Completo, sin recortes |
+| Cómo se prepara un cristiano | 8 | Se desarrollan los tres primeros niveles |
+| Ejemplos bíblicos | 7 | Noé, José y Pablo en el naufragio |
+| Cierre | 4 | Completo |
+
+**Lo que sale del deck no se pierde:** maremotos y primeros auxilios están
+completos en la hoja del participante, y el Bloque 4 —la enseñanza bíblica sobre
+los fenómenos naturales— se condensa en una sola diapositiva dentro de la
+apertura, centrada en Lucas 13. Las notas le indican al conferencista que
+anuncie esto en voz alta, para que nadie crea que se olvidó.
 
 El código de color sigue el del esquema: ámbar para el hilo bíblico, y un color
 por amenaza en el Bloque 1 (naranja terremoto, azul ciclón, verde maremoto, rojo
@@ -112,7 +138,7 @@ incendio, gris accidentes).
 
 ### Las notas del orador
 
-**Cada una de las 47 diapositivas lleva en las notas lo que hay que decir ahí**,
+**Cada diapositiva lleva en las notas lo que hay que decir ahí**,
 redactado en primera persona y listo para leerse. Están organizadas con
 etiquetas:
 
@@ -123,17 +149,23 @@ etiquetas:
 - **TRANSICIÓN** — el puente hacia el bloque siguiente.
 
 En PowerPoint se ven en la Vista del moderador, o en `Vista → Notas` para
-imprimirlas. Son unas 6.100 palabras en total, alrededor de 130 por diapositiva.
+imprimirlas. Unas 6.100 palabras en la versión de 90 minutos y 5.000 en la de
+45, alrededor de 140 por diapositiva en ambas. Las notas de la versión corta
+están reescritas para ese ritmo: dicen cuántos minutos tiene cada bloque, qué
+desarrollar y qué solo nombrar.
 El guion completo sigue estando en `01-guion-conferencia.md`, que es el
 documento para estudiar; las notas son para tenerlas delante mientras dicta.
 
-**Para reeditarlo:** el deck se genera desde `generar-deck.js`. Con Node
-instalado:
+**Para reeditarlos:** cada deck se genera desde su script. Con Node instalado:
 
 ```bash
 npm install pptxgenjs
-node generar-deck.js "Organismos de Socorro y la Biblia.pptx"
+node generar-deck-45.js "Organismos de Socorro y la Biblia - 45 min.pptx"
+node generar-deck-90.js "Organismos de Socorro y la Biblia - 90 min.pptx"
 ```
+
+Son dos scripts independientes: un cambio en uno no toca al otro, así que si
+edita contenido que aparece en ambos, hágalo en los dos.
 
 Editar el script y regenerar es más confiable que mover cajas a mano en
 PowerPoint, sobre todo si se cambia el texto de varias diapositivas. Aun así, el
